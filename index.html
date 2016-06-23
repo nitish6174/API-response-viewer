@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>API response viewer</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"></link>
+	<link rel="stylesheet" type="text/css" href="css/prism.css"></link>
+	<script type="text/javascript" src="js/prism.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css"></link>
+</head>
+
+<body>
+	
+	<div class="container-fluid">
+
+		<form class="form text-center" id="request_form">
+			<div class="form-group text-center">
+				<input type="text" name="url" class="form-control" placeholder="Enter URL" autocomplete="off">
+			</div>
+		</form>
+
+		<div class="buttonBar">
+			<button id="getButton" class="btn btn-success btn-custom btn-submit">GET</button>
+			<button id="postButton" class="btn btn-success btn-custom btn-submit active">POST</button>
+		</div>
+
+		<button class="btn btn-primary btn-custom" id="historyButton">Show/Hide history</button>
+		<div id="history"></div>
+
+		<pre id="resultBox" class="line-numbers data-line code-toolbar language-json"><code id="result" class="language-json">{ "request" : "GET" }</code></pre>
+
+	</div>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>

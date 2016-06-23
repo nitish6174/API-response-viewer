@@ -1,0 +1,100 @@
+#request_form {
+	margin: 20px;
+}
+
+.btn-submit:not(.active) {
+	background-color: silver;
+	border-color: silver;
+	color: black;
+}
+
+.btn-submit:active {
+	outline: 0px;
+	box-shadow: none;
+}
+
+#historyButton {
+	margin-top: 20px;
+	margin-left: 20px;
+	border-radius: 0px;
+	background-color: #3498DB;
+	border: none;
+}
+#historyButton:focus {
+	outline: none;
+	background-color: #3498DB;
+}
+#history {
+	display: none;
+	margin: 20px;
+	margin-top: 0px;
+	padding: 5px;
+	border: 1px solid #ccc;
+}
+#history .historyItem {
+	margin-top: 5px;
+	background-color: ghostwhite;
+	cursor: pointer;
+	border: 1px solid #999;
+}
+#history .historyItem:first-child {
+	margin-top: 0px;
+}
+#history .copyText {
+	display: inline-block;
+	background-color: #999;
+	color: white;
+	padding: 5px;
+}
+#history .historyText {
+	display: inline-block;
+	padding: 5px;
+	padding-left: 10px;
+}
+
+
+#resultBox {
+	margin: 20px;
+	overflow: auto;
+	font-size: 16px;
+}
+#result {
+	overflow: hidden;
+	cursor: text;
+	overflow: auto;
+}
+#resultBox , #result {
+	border: none;
+	border-radius: 0px;
+}
+#resultBox.success {
+	animation-name: successFlash;
+	animation-duration: 0.5s;
+}
+
+
+.form-control {
+	border-radius: 0px;
+}
+.form-control:focus {
+	outline: none;
+	box-shadow: none;
+}
+.input-group-addon {
+	border-radius: 0px;
+}
+#inputSubmit {
+	cursor: pointer;
+}
+
+.buttonBar {
+	margin-left: 20px;
+}
+.btn-custom {
+	border-radius: 0px;
+}
+
+@keyframes successFlash {
+	from { background-color: #2ECC71; }
+	to { background-color: #222; }
+}
